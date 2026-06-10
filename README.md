@@ -4,7 +4,7 @@ InstallGen AI is a state-of-the-art autonomous multi-agent swarming platform des
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 * **Real-Time Multi-Agent Orchestration:** Sequentially runs specialized agents (Planner, Generator, Auditor, Verifier) to process natural language installation requests.
 * **Stateless JWT Authentication:** Built-in security with JSON Web Tokens (JWT), password hashing (`bcrypt`), and user session persistence.
@@ -16,7 +16,7 @@ InstallGen AI is a state-of-the-art autonomous multi-agent swarming platform des
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Backend Services
 * **Core Framework:** [FastAPI](https://fastapi.tiangolo.com/) (Python 3.9+) for high-performance, asynchronous REST APIs.
