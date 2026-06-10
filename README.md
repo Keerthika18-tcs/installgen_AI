@@ -1,4 +1,4 @@
-# InstallGen AI – Multi-Agent Installation Automation Platform
+# InstallGen AI – Multi-Agent Installation Automation platform
 
 InstallGen AI is a state-of-the-art autonomous multi-agent swarming platform designed to automate, inspect, and verify software system configurations, software package setups, and service deployments. By orchestrating a pipeline of specialized AI agents, the platform plans setup workflows, generates safe scripts, audits code security, and verifies daemon binding integrity.
 
