@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-black dark:text-slate-100 antialiased transition-colors duration-300;
+  }
+}
+
+/* Custom Scrollbars for premium purple aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.dark .glass-panel {
+  background: rgba(9, 9, 11, 0.7); /* Deep Zinc black */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Premium mesh background gradient - Purple, Black, and White */
+.mesh-gradient-bg {
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(168, 85, 247, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(244, 244, 245, 0.9) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
+}
+
+.dark .mesh-gradient-bg {
+  background-color: #000000; /* Deep black background */
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(88, 28, 135, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(9, 9, 11, 0.9) 0px, transparent 50%);
+}
+
+/* Class to enforce smooth entry page-entry slide-ins */
+.animate-fade-in-slide {
+  animation: fadeInSlide 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Card hover scaling micro-animations */
+.hover-scale-card {
+  @apply transition-all duration-300 hover:scale-[1.01] hover:border-purple-500/20 active:scale-[0.99];
+}
